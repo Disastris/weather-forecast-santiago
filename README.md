@@ -1,1 +1,2 @@
 # weather-forecast-santiago
+The purpose of this homework is to create a website that accurately shows the weather when coordinates or city names are typed in. Using this information from third party websites that give this information to be used for its intended purposes
