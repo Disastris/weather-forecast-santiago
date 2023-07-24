@@ -2,6 +2,8 @@
 var APIKey = '46941a0b9b7bb20bbb4b5e4ec5d94134';
 var city;
 var queryURL ="https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+
+function getApi(){
 fetch(queryURL)
     .then(function(response){
         return response.json();
@@ -24,8 +26,8 @@ fetch(queryURL)
         tableData.appendChild(link);
         createTableRow.appendChild(tableData);
         tableBody.appendChild(createTableRow);    
-    }
-});
+}})
+};
 
 fetchButton.addEventListener('click',getApi);
 
