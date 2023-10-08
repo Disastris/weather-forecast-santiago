@@ -10,7 +10,7 @@
 <body class="h-100">
     <section id="starter-screen" class="container d-flex flex-column align-items-center justify-items-between p-5 bg-light shadow rounded-5 text-center">
         <h1>Weather Forecast</h1>
-        <button class="btn btn-danger" id="fetchButton">
+        <!-- <button class="btn btn-danger" id="fetch-button">
         Click Here
         </button>
         <table class="card-body table mx-auto my-4">
@@ -19,7 +19,22 @@
         </th>
         <tbody id="repo-table" class="mx-auto text-center"></tbody>
         </table>
-    </section>
+    </section> -->
+    
+    <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="fetch-input">
+          <label class="form-label text-center" for="form1" placeholder="Search City"></label>
+        </div>
+        <button type="button" class="btn btn-primary" id="fetch-button">
+          <!-- <i class="fas fa-search search"></i> -->
+          Search
+        </button>
+      </div>
+<h2>Today's Weather</h2>
+      <div id = "fetch-weather"></div>
+      <h2>Five Day Forecast</h2>
+      <div id = "forecast-weather"></div>
     <script src="./assets/main.js"></script>
 </body>
 </html>
